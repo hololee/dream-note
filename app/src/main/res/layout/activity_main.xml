@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+    tools:context=".MainActivity">
+
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/xmladview"
+        android:background="#f5f5f5"
+        android:gravity="bottom"
+        sothree:umanoPanelHeight="50dp"
+        sothree:umanoShadowHeight="2dp">
+
+
+        <RelativeLayout
+            android:id="@+id/view_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f5f5f5">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="TIME"
+                    android:textColor="#6a6a6a"
+                    android:textSize="20dp" />
+
+
+                <Button
+                    android:id="@+id/set"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/setting" />
+
+
+                <View
+                    android:id="@+id/bar0"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/textView"
+                    android:background="#e5e5e5" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bar0">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#6a6a6a" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/bar"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/top"
+                android:background="#e5e5e5" />
+
+            <RelativeLayout
+
+
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/bar">
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:divider="@null"
+                    android:scrollbars="none">
+
+                </ListView>
+
+
+                <com.melnykov.fab.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="16dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_content_add"
+                    fab:fab_colorNormal="@color/primary"
+                    fab:fab_colorPressed="@color/primary_pressed" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view_main">
+
+
+            <RelativeLayout
+                android:id="@+id/view_bar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="위로 슬라이드하여 성공 목록을 확인하세요."
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view_bar">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#e5e5e5" />
+
+
+                <ListView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/listViews"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:divider="@null"
+                    android:scrollbars="none">
+
+                </ListView>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+    <com.fsn.cauly.CaulyAdView xmlns:app="http://schemas.android.com/apk/res/com.hanstudio.dream.dreamnote"
+
+        android:id="@+id/xmladview"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        app:appcode="D8jIRd8w"
+        app:bannerHeight="Fixed"
+        app:dynamicReloadInterval="true"
+        app:effect="RightSlide"
+        app:reloadInterval="20" />
+
+</RelativeLayout>

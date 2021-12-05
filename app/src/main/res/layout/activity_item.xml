@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:configChanges = "keyboard|keyboardHidden|orientation|screenSize">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5">
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="등록 날짜\nTIME"
+            android:textColor="#4f4f4f"
+            android:textSize="18dp" />
+
+     </RelativeLayout>
+
+    <View
+        android:id="@+id/bar1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/top"
+        android:background="#e5e5e5" />
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bar2"
+        android:layout_below="@+id/bar1"
+        android:layout_margin="15dp"
+        android:scrollbars="none">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:layout_marginTop="15dp"
+                android:text="TEXT"
+                android:textColor="#4f4f4f"
+                android:textSize="25dp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/bar2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/banner"
+        android:background="#e5e5e5" />
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/xmladview"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:text="확인 횟수"
+            android:textColor="#4f4f4f"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text5"
+            android:layout_marginLeft="5dp"
+            android:text="19"
+            android:textColor="#4f4f4f"
+            android:textSize="24dp" />
+
+        <Button
+            android:layout_toLeftOf="@+id/button_ok"
+            android:layout_marginRight="40dp"
+            android:id="@+id/button_suc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ok" />
+
+
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ok_button" />
+
+    </RelativeLayout>
+
+    <com.fsn.cauly.CaulyAdView xmlns:app="http://schemas.android.com/apk/res/com.hanstudio.dream.dreamnote"
+
+        android:id="@+id/xmladview"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        app:appcode="D8jIRd8w"
+        app:effect="RightSlide"
+        app:dynamicReloadInterval="true"
+        app:reloadInterval="20"
+        app:bannerHeight="Fixed"
+        />
+
+</RelativeLayout>

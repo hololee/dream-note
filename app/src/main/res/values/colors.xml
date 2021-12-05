@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="C8">#E74C3C</color>
+    <color name="C7">#E67E22</color>
+    <color name="C6">#F1C40F</color>
+    <color name="C5">#2Ecc71</color>
+    <color name="C4">#1abc9c</color>
+    <color name="C3">#3498db</color>
+    <color name="C2">#9b59b6</color>
+    <color name="C1">#bdc3c7</color>
+
+
+    <color name="primary">#3498db</color>
+    <color name="primary_pressed">#3498db</color>
+    <color name="ripple">#3498db</color>
+
+
+
+</resources>

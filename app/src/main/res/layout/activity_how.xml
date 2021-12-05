@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+        >
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id = "@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity = "center"
+                android:text = "버킷리스트를\n이용해 주셔서 감사합니다."
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#6a6a6a"
+                />
+
+            <TextView
+                android:id = "@+id/text2"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:gravity="center"
+                android:text= "버킷리스트는 꿈을 이루게 도와주는 DREAM NOTE 입니다.\n 이루고 싶은 일을 등록하고 관리할 수 있습니다. 사진과 함께 글을 등록하고 얼마나 관심있게 보고 있는지 횟수로 알려주며 언제 일을 결심했는지 알 수 있습니다."/>
+
+            <TextView
+                android:id = "@+id/text3"
+                android:layout_below="@+id/text2"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text = "스토리 추가"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#6a6a6a"
+                />
+            <TextView
+                android:gravity="center"
+                android:id = "@+id/text4"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+            android:text= "왼쪽 하단의 + 버튼을 이용해 스토리를 추가 할 수 있습니다.\n 메인 메뉴에서 볼 수 있으며 시작 날짜, 확인 횟수등을 볼 수 있습니다."/>
+
+            <TextView
+                android:id = "@+id/text5"
+                android:layout_below="@+id/text4"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text = "스토리 삭제"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#6a6a6a"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:id = "@+id/text6"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:text= "만들어진 스토리를 길게 눌러 삭제할 수 있습니다."/>
+
+
+            <TextView
+                android:id = "@+id/text7"
+                android:layout_below="@+id/text6"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text = "성공 리스트"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#6a6a6a"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:id = "@+id/text8"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:text= "가운데 하단의 성공 리스트 버튼을 이용해 볼 수 있으며 이루어진 스토리 목록을 볼 수 있습니다.\n 등록한 스토리에서 하단의 체크 버튼을 누르면 성공 스토리로 등록 할 수 있습니다."/>
+
+
+
+            <TextView
+                android:id = "@+id/text9"
+                android:layout_below="@+id/text8"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text = "암호 설정"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#6a6a6a"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:id = "@+id/text10"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/text9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:text= "설정 창에서 암호 설정을 통해 설정 할 수 있습니다."/>
+
+            <TextView
+                android:id = "@+id/text11"
+                android:layout_below="@+id/text10"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text = "관심도"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#6a6a6a"
+                />
+
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:id = "@+id/text12"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/text11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:text= "관심도는 리스트에서 색을 통해 확인 할 수 있습니다. 많이 볼수록 무지게에서 빨강에 가까워 집니다.(기본 색은 회색 입니다.)"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
