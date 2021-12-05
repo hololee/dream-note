@@ -1,7 +1,7 @@
 # dream-note   
 
 `updated` : 2016년 9월 10일  
-`status` : [product](https://play.google.com/store/apps/details?id=com.hanstudio.timer.multiautotimer)
+`status` : [product](https://play.google.com/store/apps/details?id=com.hanstudio.dream.dreamnote)
 
 
 드림노트 - 버킷 리스트, 꿈 목록, 소원   
